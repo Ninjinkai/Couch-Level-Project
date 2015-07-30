@@ -74,12 +74,8 @@ include "php/db_connect.php";
 	$newEId = $db->insert_id;
 					
 	mkdir("media/events/".$newEId, 0777);
-	echo '<div>You event has been created. You can now add a cover image.</div>
-		<form action="uploadimage.php" method="post" enctype="multipart/form-data" id="MyUploadForm">
-			<input name="image_file" id="imageInput" type="file" />
-			<input type="hidden" name="eventID" id="eventID" value="'.$newEId.'"/>
-			<input type="submit"  id="submit-btn" value="Upload" />		
-		</form>
+	echo '<div>Your event has been created. Thank You!.</div>
+		
 			<div id="output"></div>';
 			
 			

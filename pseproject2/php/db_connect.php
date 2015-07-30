@@ -8,8 +8,8 @@ $server_root = dirname($_SERVER['PHP_SELF']);
 
 $dbhost = "localhost"; // Most likely will not need to be changed
 $dbname = "fariasc2013"; // needs to be changed to your designated table name
-$dbuser = "root"; // needs to be changed to reflect LAMP server credentials
-$dbpass = ""; // needs to be changed to reflect LAMP server credentials
+$dbuser = "fariasc2013"; // needs to be changed to reflect LAMP server credentials
+$dbpass = "UBeN74G8RbPKG"; // needs to be changed to reflect LAMP server credentials
 
 
 $db = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
@@ -18,4 +18,8 @@ if($db->connect_errno > 0)
 {
     die('Unable to connect to database [' . $db->connect_error . ']');
 }
+/* else
+{
+	echo "Database connected!";
+} */
 ?>

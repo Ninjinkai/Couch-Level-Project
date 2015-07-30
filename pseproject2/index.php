@@ -1,259 +1,184 @@
 <?php include_once 'header.php'; ?>
+
 <html>
-
-            <!-- Page Content Start -->
-            <!-- ================== -->
-
-            <div class="wraper container-fluid">
-                <div class="row">
+	<body>
+	<div class="wraper container-fluid">
+	 <div class="row">
                     <div class="col-sm-12">
                         <div class="bg-picture" style="background-image:url('img/bg_6.jpg')">
                           <span class="bg-picture-overlay"></span><!-- overlay -->
                           <!-- meta -->
-                          <div class="box-layout meta bottom">
-                            <div class="col-sm-6 clearfix">
-                              
-                              <div class="media-body">
-                                <h2 class="text-white mb-2 m-t-10 ellipsis">Activity Name</h2>
-                                <h5 class="text-white">MyCityName</h5>
-                              </div>
-                            </div>
-                            <div class="col-sm-6">
-
-                              <div class="pull-right">
-                                <div class="dropdown">
-                                    <a data-toggle="dropdown" class="dropdown-toggle btn btn-primary" href="#">Follow <span class="caret"></span></a>
-                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                        <li><a data-toggle="tab" href="#edit-profile">Submit Event</a></li></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Unfollow</a></li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
+                          <div class="box-layout meta bottom">          
+								<center><div class="text-vertical-center">
+								<h1>Rendezvous</h1>
+								<h3>Connecting through the outdoors</h3>
+								<br>
+								<a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+								</center>
+                            
+							 </div>
                           </div>
                           <!--/ meta -->
                         </div>
                     </div>
                 </div>
+				</div>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="lead">We are a Social Network for those who would like to connect through Hobbies and Outdoor Activities.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-                <div class="row m-t-30">
-                    <div class="col-sm-12">
-                        <div class="panel panel-default p-0">
-                            <div class="panel-body p-0"> 
-                                <ul class="nav nav-tabs profile-tabs">
-                                    <li class="active"><a data-toggle="tab" href="#aboutme">About</a></li>
-                                    <li class=""><a data-toggle="tab" href="#user-activities">Events</a></li>
-                                    <li class=""><a data-toggle="tab" href="#edit-profile">Submit Event</a></li>
-                                    <li class=""><a data-toggle="tab" href="#projects">Popular</a></li>
-                                </ul>
-
-                                <div class="tab-content m-0"> 
-
-                                    <div id="aboutme" class="tab-pane active">
-                                    <div class="profile-desk">
-                                        <h1>Activity Name</h1>
-                                        <span class="designation">Description</span>
-                                        <p>
-                                            Describe this Activity for users to see.
-                                        </p>
-                                        <a class="btn btn-primary m-t-20" href="#"> <i class="fa fa-check"></i>Join</a>
-
-                                        <table class="table table-condensed">
-                                            <thead>
-                                                <tr>
-                                                    <th colspan="3"><h3>Information</h3></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><b>Followers</b></td>
-                                                    <td>
-                                                    <a href="#" class="ng-binding">
-                                                        234
-                                                    </a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><b>Total Posts</b></td>
-                                                    <td class="ng-binding">
-                                                    <a data-toggle="tab" href="#user-activities">89</a>
-													</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><b>Date Created</b></td>
-                                                    <td class="ng-binding">05/14/2014</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><b>Location</b></td>
-                                                    <td>
-                                                    <a href="" class="ng-binding">
-                                                        City Name
-                                                    </a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div> <!-- end profile-desk -->
-                                </div> <!-- about-me -->
-
-
-                                <!-- Activities -->
-                                <div id="user-activities" class="tab-pane">
-                                    <div class="timeline-2">
-                                        <div class="time-item">
-                                            <div class="item-info">
-                                                <div class="text-muted">Time Stamp</div>
-                                                <p><a href="" class="text-info">User_name</a> Created the Activity<a href="#" class="text-success"> Activity Title</a>.</p>
-                                                <p><em>"Activity Description "</em></p>
-                                            </div>
-                                        </div>
-										
-										<div class="time-item">
-                                            <div class="item-info">
-                                                <div class="text-muted">Time Stamp</div>
-                                                <p><a href="" class="text-info">User_name</a> Created the Activity<a href="#" class="text-success"> Activity Title</a>.</p>
-                                                <p><em>"Activity Description "</em></p>
-                                            </div>
-                                        </div>
-										
-										<div class="time-item">
-                                            <div class="item-info">
-                                                <div class="text-muted">Time Stamp</div>
-                                                <p><a href="" class="text-info">User_name</a> Created the Activity<a href="#" class="text-success"> Activity Title</a>.</p>
-                                                <p><em>"Activity Description "</em></p>
-                                            </div>
-                                        </div>
-										
-										<div class="time-item">
-                                            <div class="item-info">
-                                                <div class="text-muted">Time Stamp</div>
-                                                <p><a href="" class="text-info">User_name</a> Created the Activity<a href="#" class="text-success"> Activity Title</a>.</p>
-                                                <p><em>"Activity Description "</em></p>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-
-                                <!-- Submission -->
-                                <div id="edit-profile" class="tab-pane">
-                                    <div class="user-profile-content">
-                                        
-										<form class="cmxform form-horizontal tasi-form" id="commentForm" method="get" action="#" novalidate="novalidate">
-                                        <div class="form-group ">
-                                            <label for="title" class="control-label col-lg-2">Title </label>
-                                            <div class="col-lg-10">
-                                                <input class=" form-control" id="title" name="title" type="text" placeholder = "Title" required="" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="form-group ">
-                                            <label for="cemail" class="control-label col-lg-2">Date</label>
-                                            <div class="col-lg-10">
-                                                <input class="form-control " id="date" type="date" name="date" placeholder = "mm/dd/yy" required="" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="form-group ">
-                                            <label for="curl" class="control-label col-lg-2">Location</label>
-                                            <div class="col-lg-10">
-                                                <input class="form-control " id="location" type="text-info" name="location" placeholder = "Street, City, Zip" required="" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="form-group ">
-                                            <label for="ccomment" class="control-label col-lg-2">Information</label>
-                                            <div class="col-lg-10">
-                                                <textarea class="form-control " id="ccomment" name="comment" placeholder = "Your Comment" required="" aria-required="true"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-lg-offset-2 col-lg-10">
-                                                <button class="btn btn-success" type="submit">Submit</button>
-                                                <button class="btn btn-default" type="button">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </form>
-										
-                                    </div>
-                                </div>
-
-
-                                <!-- profile -->
-                                <div id="projects" class="tab-pane">
-                                    <div class="row m-t-10">
-                                        <div class="col-md-12">
-                                            <div class="portlet"><!-- /primary heading -->
-                                                <div id="portlet2" class="panel-collapse collapse in">
-                                                    <div class="portlet-body">
-                                                        <div class="table-responsive">
-                                                            <table class="table">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>#</th>
-                                                                        <th>Project Name</th>
-                                                                        <th>Start Date</th>
-                                                                        <th>Due Date</th>
-                                                                        <th>Status</th>
-                                                                        <th>Assign</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>1</td>
-                                                                        <td>Velonic Admin</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="label label-info">Work in Progress</span></td>
-                                                                        <td>Coderthemes</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>2</td>
-                                                                        <td>Velonic Frontend</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="label label-success">Pending</span></td>
-                                                                        <td>Coderthemes</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>3</td>
-                                                                        <td>Velonic Admin</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="label label-pink">Done</span></td>
-                                                                        <td>Coderthemes</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>4</td>
-                                                                        <td>Velonic Frontend</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="label label-purple">Work in Progress</span></td>
-                                                                        <td>Coderthemes</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>5</td>
-                                                                        <td>Velonic Admin</td>
-                                                                        <td>01/01/2015</td>
-                                                                        <td>07/05/2015</td>
-                                                                        <td><span class="label label-warning">Coming soon</span></td>
-                                                                        <td>Coderthemes</td>
-                                                                    </tr>
-                                                                    
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> <!-- /Portlet -->
-                                        </div>
-                                    </div>
-                                </div>
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Our Services</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa ion-ios7-people fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Connecting</strong>
+                                </h4>
+                                <p><b>Connect with people around your area who share the same hobbies.</b></p>
+                                
                             </div>
-             
-                        </div> 
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-bicycle fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Join Activities</strong>
+                                </h4>
+                                <p><b>Join Activities and connect with people who share same interests.</b></p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-calendar fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Join Events</strong>
+                                </h4>
+                                <p><b>Join events that other users have posted and make new friends.</b></p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa ion-android-add-contact fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Create Events</strong>
+                                </h4>
+                                <p><b>Create your own events and see how many users show up.</b></p>
+                            </div>
+                        </div>
                     </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+            
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                   
+                    <p>777 Glades Rd<br>Boca Raton, FL 33431</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (754)245-3574</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">fariasc2013@fau.edu</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">   
+                        <li>
+                            <a href="https://github.com/Ninjinkai/Couch-Level-Project"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Rendezvous 2015</p>
                 </div>
             </div>
         </div>
-		<?php include_once "footer.php";?>
-		</html>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+			
+			
+<?php include_once "footer.php";?>
+</html>
 		
 		
 	

@@ -27,7 +27,7 @@ function activites($type,$id){
 				$list .='<li><a href="activities.php?actID='. $id.'">'.$name.' '.$desc.'</a></li>';
 			}
 		} else {
-			$list .='<li><a href="activities.php?actID=0">Join An activity here.</a></li>';
+			$list .='<li><a href="activities.php?actID=0">No joined Activities.</a></li>';
 		}
 	} else if($type == "eve"){
 		$query = "SELECT * FROM events WHERE act_link = $id ORDER BY uploaddate ASC";
@@ -142,13 +142,13 @@ function myEvents($userID){
 		}
 	echo $list;
 	} else {
-		echo $list = "No events Created";
+		echo $list = "<li><a>No events Created</a></li>";
 	}
 }
 
 function joinedEvents($userID){
 	include "php/db_connect.php";
-	$q = "SELECT id, ename FROM events WHERE rsvp LIKE '%$userID %'";
+	$q = "SELECT id, ename FROM events WHERE rsvp LIKE '%$userID%'";
 	$sql = $db->query($q);
 	$count = $db->affected_rows;
 	if($count > 0 ){
@@ -160,7 +160,7 @@ function joinedEvents($userID){
 		}
 	echo $list;
 	} else {
-		echo $list ="No events joined";
+		echo $list ="<li><a>No events joined</a></li>";
 	}
 }				
 ?>

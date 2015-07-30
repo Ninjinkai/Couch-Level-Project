@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
@@ -26,6 +26,11 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/helper.css" rel="stylesheet">
         <link href="css/style-responsive.css" rel="stylesheet" />	
+		<link href="css/stylish-portfolio.css" rel="stylesheet">
+		
+		
+
+	</head>
 		
 		<script src="js/jquery.js"></script>		
 		
@@ -71,7 +76,7 @@ $userData = getUserData($_SESSION['id']);
                     </li>
 					<li class="has-submenu"><a href="#"><i class="ion-person"></i> <span class="nav-label">My Events</span></a>
                         <ul class="list-unstyled">
-                            <?php myEvents($_SESSION['id']);?>
+							<?php myEvents($_SESSION['id']);?>
                         </ul>
                     </li>
                     <li class="has-submenu"><a href="#"><i class="ion-person-stalker"></i> <span class="nav-label">Joined Events</span></a>
@@ -188,7 +193,7 @@ $userData = getUserData($_SESSION['id']);
                     <!-- user login dropdown start-->
                     <li class="dropdown text-center">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <img alt="" src="img/avatar-2.jpg" class="img-circle profile-img thumb-sm">
+                            <img alt="" src="img/default.png" class="img-circle profile-img thumb-sm">
                             <span class="username"><?php echo $userData[1];?></span> <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu extended pro-menu fadeInUp animated" tabindex="5003" style="overflow: hidden; outline: none;">
@@ -225,16 +230,9 @@ $userData = getUserData($_SESSION['id']);
 					<li ><a href="index.php"><i class="ion-home"></i> <span class="nav-label">Home</span></a>
                     <li class="has-submenu active"><a href="#"><i class="ion-navicon-round"></i> <span class="nav-label">Activities</span></a>
                         <ul class="list-unstyled">
-                            <li><a href="#">Football</a></li>
-                            <li><a href="#">Baseball</a></li>
-                            <li><a href="#">Soccer</a></li>
-                            <li><a href="#">Swimming</a></li>
-                            <li><a href="#">Tennis</a></li>
-                            <li><a href="#">Running</a></li>
-                            <li><a href="#">Lifting Weights</a></li>
-                            <li><a href="#">Yoga</a></li>
-                            <li><a href="#">Volleyball</a></li>
-                            <li><a href="#">Basketball</a></li>
+                            <ul class="list-unstyled">
+                            <?php activites('act',0);?>
+							</ul>
                         </ul>
                     </li>
                     <li>
@@ -275,7 +273,7 @@ $userData = getUserData($_SESSION['id']);
                                 <div class="dropdown">
                                     <a data-toggle="dropdown" class="dropdown-toggle btn btn-primary" href="#">Sign In <span class="caret"></span></a>
                                     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                        <li><a href="login.php">Sing In</a></li>
+                                        <li><a href="login.php">Sign In</a></li>
                                         <li class="divider"></li>
                                         <li><a href="registration.php">Register</a></li>
                                     </ul>

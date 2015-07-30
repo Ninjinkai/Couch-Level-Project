@@ -98,7 +98,7 @@ $eveID = $_GET['eveID'];
                                                     </a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><b>Date Created</b></td>
+                                                    <td><b>Event Date</b></td>
                                                     <td class="ng-binding"><?php echo $cdate;?></td>
                                                 </tr>
                                                 <tr>
